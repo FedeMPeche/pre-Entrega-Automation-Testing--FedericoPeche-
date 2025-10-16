@@ -27,5 +27,6 @@ def test_login():
     #No se cierra automáticamente
     print("✅ Navegador abierto. Cerralo manualmente cuando termines.")
 
-if __name__ == "__main__":
+#if __name__ == "__main__":
     test_login()
+
