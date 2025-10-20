@@ -18,20 +18,11 @@ Google Chrome como navegador utilizado para la ejecución de pruebas.
 Git y GitHub para control de versiones y repositorio de entrega.
 
 ## Dependencias e instalación:
-Dependencias:
-selenium>=4.10.0
-pytest>=7.0.0
-pytest-html>=3.0.0
-webdriver-manager>=4.0.0
+Dependencias: selenium>=4.10.0 | pytest>=7.0.0 | pytest-html>=3.0.0 | webdriver-manager>=4.0.0
 
 ## Instalación de dependencias: 
 Para ejecutar las pruebas de automatización, instalar las siguientes dependencias:
-Crear venv en carpeta raiz: 
-python -m venv venv
-Activar el venv:
-.\venv\Scripts\Activate.ps1
-Instalar dependencias usando el venv:
-pip install selenium pytest pytest-html webdriver-manager
+Crear venv en carpeta raiz: python -m venv venv | Activar el venv: .\venv\Scripts\Activate.ps1 | Instalar dependencias usando el venv: pip install selenium pytest pytest-html webdriver-manager
 
 ## Ejecutar tests y generar HTML:
 pytest -v --html=reports/reporte.html --self-contained-html
