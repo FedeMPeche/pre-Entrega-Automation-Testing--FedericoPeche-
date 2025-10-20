@@ -29,17 +29,17 @@ pytest -v --html=reports/reporte.html --self-contained-html
 
 ## Estructura
 pre-Entrega-Automation-Testing--FedericoPeche/
-├─ tests/
-│  ├─ test_login.py          # Test de login automatizado (TC-001)
-│  ├─ test_inventory.py      # Validación de catálogo y elementos (TC-002)
-│  └─ test_cart.py           # Interacción con productos y carrito (TC-003)
-├─ utils/
-│  ├─ browser.py             # Configuración del WebDriver
-│  └─ saucedemo_pages.py     # Clases y métodos reutilizables (Page Objects)
-├─ reports/
-│  └─ screenshots/           # Capturas automáticas en caso de fallos
-├─ conftest.py               # Fixtures y configuración de Pytest
-└─ README.md                 # Documentación del proyecto
+.├─ tests/
+.│  ├─ test_login.py          # Test de login automatizado (TC-001)
+.│  ├─ test_inventory.py      # Validación de catálogo y elementos (TC-002)
+.│  └─ test_cart.py           # Interacción con productos y carrito (TC-003)
+.├─ utils/
+.│  ├─ browser.py             # Configuración del WebDriver
+.│  └─ saucedemo_pages.py     # Clases y métodos reutilizables (Page Objects)
+.├─ reports/
+.│  └─ screenshots/           # Capturas automáticas en caso de fallos
+.├─ conftest.py               # Fixtures y configuración de Pytest
+.└─ README.md                 # Documentación del proyecto
 
 ## Enlace y avance del armado de los diferentes Test Cases:
 https://drive.google.com/drive/folders/1ukOp_9HD0p2HdavNIu8mbCe2951tsFGd?usp=sharing
