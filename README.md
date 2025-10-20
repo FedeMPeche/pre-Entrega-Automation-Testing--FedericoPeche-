@@ -25,7 +25,13 @@ Para ejecutar las pruebas de automatización, instalar las siguientes dependenci
 Crear venv en carpeta raiz: python -m venv venv | Activar el venv: .\venv\Scripts\Activate.ps1 | Instalar dependencias usando el venv: pip install selenium pytest pytest-html webdriver-manager
 
 ## Ejecutar tests y generar HTML:
-pytest -v --html=reports/reporte.html --self-contained-html
+## Para Test de Login:
+pytest -q tests/test_login.py::test_login_success -v --html=reports/reporte_TC-001.html --self-contained-html
+## Para Test de Inventario:
+pytest -q tests/test_inventory.py::test_inventory_page_contents -v --html=reports/reporte_TC-002.html --self-contained-html
+## Para Test de Carrito:
+pytest -q tests/test_cart.py::test_add_to_cart_and_verify -v --html=reports/reporte_TC-003.html --self-contained-html
+
 
 ## Estructura
 pre-Entrega-Automation-Testing--FedericoPeche/
