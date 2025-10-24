@@ -57,6 +57,8 @@ Start-Process .\reports\reporte_TC-003.html
 │  └─ screenshots/
 ## Fixtures y configuración de Pytest
 ├─ conftest.py
+## Para automatizar reportes HTML en Tests.
+├─ pytest.ini
 ## Documentación del proyecto
 └─ README.md                
 
