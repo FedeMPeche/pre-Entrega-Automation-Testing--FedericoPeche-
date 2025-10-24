@@ -5,6 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 BASE_URL = "https://www.saucedemo.com/"
 
+#Test de Login
 class LoginPage:
     URL = BASE_URL
     USER = (By.ID, "user-name")
@@ -24,6 +25,7 @@ class LoginPage:
         self.driver.find_element(*self.PASS).send_keys(password)
         self.driver.find_element(*self.LOGIN_BTN).click()
 
+#Test de InventoryPage
 class InventoryPage:
     HEADER = (By.CLASS_NAME, "title")
     INVENTORY_ITEMS = (By.CLASS_NAME, "inventory_item")
@@ -65,6 +67,7 @@ class InventoryPage:
     def go_to_cart(self):
         self.driver.find_element(*self.CART_BTN).click()
 
+#Test de Carrito(Cart)
 class CartPage:
     CART_ITEMS = (By.CLASS_NAME, "cart_item")
     def __init__(self, driver, timeout=10):
