@@ -9,6 +9,7 @@ os.makedirs(SCREEN_DIR, exist_ok=True)
 
 @pytest.fixture(scope="function")
 def driver():
-    d = create_driver(headless=False)  # headless=True si querés CI
+    d = create_driver(headless=False)  # headless=True si usamos CI
     yield d
     d.quit()
+

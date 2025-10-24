@@ -40,21 +40,20 @@ Start-Process .\reports\reporte_TC-003.html
 
 
 ## Estructura
-pre-Entrega-Automation-Testing--FedericoPeche/
+## pre-Entrega-Automation-Testing--FedericoPeche/
 ## Test de login automatizado (TC-001)
-├─ tests/ test_login.py
+├─ tests/test_login.py
 ## Validación de catálogo y elementos (TC-002)
 │  ├─ test_inventory.py
 ## Interacción con productos y carrito (TC-003)
 │  └─ test_cart.py
-## pre-Entrega-Automation-Testing--FedericoPeche/
-├─ utils/
 ## Configuración del WebDriver
-│  ├─ browser.py
+├─ utils/browser.py
 ## Clases y métodos reutilizables (Page Objects)
 │  └─ saucedemo_pages.py
-## Capturas automáticas en caso de fallos
-├─ pre-Entrega-Automation-Testing--FedericoPeche/reports/
+## Reportes HTML
+├─ reports/
+## Capturas de los diferentes Tests (antes y despues de ser ejecutados).
 │  └─ screenshots/
 ## Fixtures y configuración de Pytest
 ├─ conftest.py
